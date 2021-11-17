@@ -41,7 +41,9 @@ if($row == NULL) {
     <main>
             <div class="container" id="items">
 
-                
+                <p>
+                    Click on a tab to view
+                </p>
 
             </div>
             
