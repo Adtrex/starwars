@@ -1,5 +1,11 @@
 <?php
 include_once('../access.php');
+
+if(count($row) >= 1) {
+    
+  } else {
+    header("Location: payment.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

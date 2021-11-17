@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
 	if($passwordverified){
         $_SESSION['email'] = $row['email'];
 
-        header("Location: dashboard");
+        header("Location: payment.php");
         
     }else{
         echo "wrong password";

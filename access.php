@@ -10,10 +10,5 @@ $result = $conn->query($query);
 $row = $result->fetch_assoc();
 
 
-//Now to check, we use an if() statement
-if(count($row) >= 1) {
-    header("Location: /dashboard");
-  } else {
-    header("Location: payment.php");
-}
+
 
