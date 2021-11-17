@@ -4,7 +4,10 @@ include_once('../access.php');
 if($row == NULL) {
     header("Location: ../payment.php");
   } else {
-    
+
+    if(!isset($_SESSION['email'])){
+        header("Location: ../login.php");
+    }
 }
 ?>
 <!DOCTYPE html>

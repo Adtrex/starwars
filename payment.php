@@ -2,7 +2,9 @@
 include_once('access.php');
 
 if($row == NULL) {
-
+    if(!isset($_SESSION['email'])){
+        header("Location: /login.php");
+    }
 }else{
     header("Location: /dashboard");
 }
