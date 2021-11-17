@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Nunito&family=Oswald&family=Roboto:wght@100;400&family=Ubuntu&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: #fff;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width:100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+@media only screen and (max-width: 767px) {
+    body {
+      background-image: url(img/background.jpg);
+    }
+    }
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    width: 40%;
+    height: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .logo img {
+        width: 60%;
+        height: auto;
+    }
+  }
+
+header {
+    border-bottom: 1px solid #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    align-items: center;
+    padding-top: 200px;
+    font-size: 18px;
+}
+
+
+
+
+main button {
+    padding: 15px 50px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main .button { 
+    margin-top: 30px;
+}
+
+main .register {
+    background: none;
+    color: #fff;
+}
+
+/* Login Page */
+
+.login-main {
+    padding-top: 150px;
+}
+
+.login-box {
+    
+    border-radius: 3px;
+
+    margin: 0 auto;
+}
+
+.login-box p {
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.account-none {
+    font-size:15px;
+    margin-top: 10px;
+}
