@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +24,14 @@
 
         <div class="login-box">
             <p> Enter Star Ship </p>
+
+            <?php
+                if(isset($_SESSION['error'])){
+                    echo '<p style="color:red;">'.$_SESSION['error'].'</p>';
+                }
+                session_unset();
+            ?>
+            
             <form class="login-form" action="processregister.php" method="post">
                 <input type="text" name="name" placeholder="John Doe" required> <br>
                 <input type="email" name="email" placeholder="johndoe@gmail.com" required> <br>
