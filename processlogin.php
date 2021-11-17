@@ -24,7 +24,9 @@ if(isset($_POST['submit'])){
         header("Location: payment.php");
         
     }else{
-        echo "wrong password";
+        $error = "username or password incorrect";
+        $_SESSION['error'] = $error;
+        header("Location: login.php");
     }
 
     

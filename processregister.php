@@ -17,9 +17,11 @@ if(isset($_POST['submit'])){
     $result_insert = $conn->query($query_insert);
 
     if($result_insert){
-        echo "saved";
+        header("Location: login.php");
     }else{
-        echo "failed";
+        $error = "Error occurred while registering";
+        $_SESSION['error'] = $error;
+        header("Location: register.php");
     }
 
 }
