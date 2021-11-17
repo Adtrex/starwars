@@ -48,7 +48,7 @@ if('success' == $tranx->data->status){
     $pay_inserted = $conn->query($query_insert);
 
     if($pay_inserted){
-        echo "<h2>Thank you for making a purchase. Your file has bee sent your email.</h2>";
+        header("Location: /dashboard");
     }else{
         echo "Not Completed";
     }
