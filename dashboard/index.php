@@ -2,9 +2,9 @@
 include_once('../access.php');
 
 if($row == NULL) {
-    
-  } else {
     header("Location: payment.php");
+  } else {
+    
 }
 ?>
 <!DOCTYPE html>
