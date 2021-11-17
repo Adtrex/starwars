@@ -1,7 +1,7 @@
 <?php
 include_once('../access.php');
 
-if(count($row) >= 1) {
+if($row == NULL) {
     
   } else {
     header("Location: payment.php");
