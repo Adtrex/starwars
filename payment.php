@@ -21,7 +21,7 @@ if($row == NULL) {
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="img/logo.png"></a>
+                <a href="index.php"><img src="img/logo.png"></a>
             </div>
         </nav>
     </header>
