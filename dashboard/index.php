@@ -2,7 +2,7 @@
 include_once('../access.php');
 
 if($row == NULL) {
-    header("Location: payment.php");
+    header("Location: ../payment.php");
   } else {
     
 }
